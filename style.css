@@ -10,7 +10,6 @@ body {
   align-items: center;
 }
 
-/* Server header */
 .server-header {
   display: flex;
   align-items: center;
@@ -42,7 +41,6 @@ body {
   text-shadow: 0 0 15px rgba(255,255,255,0.7);
 }
 
-/* Main container */
 .container {
   width: 90%;
   max-width: 800px;
@@ -62,7 +60,6 @@ body {
   text-shadow: 0 0 12px rgba(255,255,255,0.5);
 }
 
-/* Gangs */
 .gang {
   margin: 25px 0;
   padding: 15px;
@@ -95,7 +92,6 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
-/* Progress bar */
 .progress-bar {
   background: rgba(255,255,255,0.15);
   border-radius: 10px;
