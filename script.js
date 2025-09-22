@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const gangs = document.querySelectorAll(".gang");
+  const container = document.querySelector(".container");
+  const gangs = Array.from(document.querySelectorAll(".gang"));
 
+  // Sort gangs by points (highest first)
+  gangs.sort((a, b) => parseInt(b.dataset.points) - parseInt(a.dataset.points));
+
+  // Render each gang and re-append in sorted order
   gangs.forEach(gang => {
     const name = gang.dataset.name;
     const level = gang.dataset.level;
@@ -20,5 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="progress-text">${points} / ${max}</div>
       </div>
     `;
+
+    container.appendChild(gang); // Re-append in correct order
   });
 });
